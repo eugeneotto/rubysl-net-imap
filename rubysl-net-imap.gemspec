@@ -3,7 +3,7 @@ require './lib/rubysl/net/imap/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rubysl-net-imap"
-  spec.version       = RubySL::Net::Imap::VERSION
+  spec.version       = RubySL::Net::IMAP::VERSION
   spec.authors       = ["Brian Shirai"]
   spec.email         = ["brixen@gmail.com"]
   spec.description   = %q{Ruby standard library imap.}
