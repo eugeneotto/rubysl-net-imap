@@ -1,17 +1,15 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rubysl/net/imap/version'
+require './lib/rubysl/net/imap/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rubysl-net-imap"
-  spec.version       = Rubysl::Net::Imap::VERSION
+  spec.version       = RubySL::Net::IMAP::VERSION
   spec.authors       = ["Brian Shirai"]
   spec.email         = ["brixen@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.description   = %q{Ruby standard library imap.}
+  spec.summary       = %q{Ruby standard library imap.}
+  spec.homepage      = "https://github.com/rubysl/rubysl-net-imap"
+  spec.license       = "BSD"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
@@ -19,5 +17,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "mspec", "~> 1.5"
+  spec.add_development_dependency "rubysl-prettyprint", "~> 1.0"
 end
