@@ -1242,7 +1242,7 @@ module Net
       when String
       when Integer
         if data < 0 || data >= 4294967296
-          raise DataFormatError, num.to_s
+          raise DataFormatError, data.to_s
         end
       when Array
         data.each do |i|
